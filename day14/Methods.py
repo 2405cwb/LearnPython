@@ -43,6 +43,29 @@ data.sort(key= lambda x:x[1])
 # 生成器函数返回一个生成器对象，支持惰性求值（按需生成值）。
 # 适合处理大量数据或无限序列。
 ###
+def fibonacci():
+    a, b = 0, 1
+    while True:
+        yield a
+        a, b = b, a + b
+
+# 使用生成器生成斐波那契数列
+fib = fibonacci()
+for _ in range(10):
+    print(next(fib))
+with open('large_file.txt','w',encoding='utf-8') as d:
+    for i in range(100):
+        d.write('数字：'+str(i)+'\n')
+
+def read_large_file(file_path):
+    with open(file_path, 'r') as file:
+        for line in file:
+            yield line.strip()
+
+
+    # 使用生成器逐行读取文件
+for line in read_large_file('large_file.txt'):
+        print(line)
 #装饰器函数
 ###
 #装饰器是一种高阶函数，用于修改或增强其他函数的行为。
