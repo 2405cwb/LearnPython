@@ -21,7 +21,7 @@ file.flush()
 file.close()
 
 with open('file1.txt','w') as f, open('file1.txt', 'r') as r:
-    f.write('test')
+    f.write('cwb_log')
     f.flush()
     str = r.read()
     print(str)

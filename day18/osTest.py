@@ -8,8 +8,8 @@ print(os.getcwd())
 # os.chdir('..')
 print(os.getcwd())
 
-# os.mkdir('test')
-# os.makedirs("test\\aaa\ddd")
+# os.mkdir('cwb_log')
+# os.makedirs("cwb_log\\aaa\ddd")
 # os.removedirs()
 # os.rmdir()
 #返回当前目录
