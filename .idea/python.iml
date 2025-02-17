@@ -11,4 +11,12 @@
     <option name="format" value="PLAIN" />
     <option name="myDocStringFormat" value="Plain" />
   </component>
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/day20/shoopingAndAtmDemo/atm" />
+        <option value="$MODULE_DIR$/day20/shoopingAndAtmDemo/shopping" />
+      </list>
+    </option>
+  </component>
 </module>
