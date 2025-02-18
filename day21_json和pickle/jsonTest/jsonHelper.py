@@ -24,6 +24,6 @@ class myJson:
             print(r.read().encode('utf-8').decode('utf-8'))
 
 
-        
+    #
 
 
